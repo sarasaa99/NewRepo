@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210313205923_CreateDB.cs" />
+    <Compile Remove="Migrations\20210313205923_CreateDB.Designer.cs" />
+    <Compile Remove="Migrations\20210315150931_EditJoinsREviewsGalleriesToCompany.cs" />
+    <Compile Remove="Migrations\20210315150931_EditJoinsREviewsGalleriesToCompany.Designer.cs" />
+    <Compile Remove="Migrations\20210322151454_EditApplicationUser.cs" />
+    <Compile Remove="Migrations\20210322151454_EditApplicationUser.Designer.cs" />
+    <Compile Remove="Migrations\20210507194144_EditCompanyIDforApplicationUsertoCompanyIdUser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
